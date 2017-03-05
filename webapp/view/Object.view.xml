@@ -1,8 +1,10 @@
 <mvc:View
 	controllerName="opensap.manageproducts.controller.Object"
 	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:semantic="sap.m.semantic">
+	xmlns:semantic="sap.m.semantic"
+	xmlns:form="sap.ui.layout.form">
 
 	<semantic:FullscreenPage
 		id="page"
@@ -16,6 +18,7 @@
 			<ObjectHeader
 				id="objectHeader"
 				title="{ProductID}"
+				responsive="true"
 				number="{
 							path: 'Price',
 							formatter: '.formatter.numberUnit'
@@ -25,6 +28,9 @@
 					<ObjectAttribute text="{Name}"/>
 				</attributes>
 			</ObjectHeader>
+			<mvc:XMLView viewName="opensap.manageproducts.view.ProductDetails"/>
+			<core:Fragment fragmentName="opensap.manageproducts.view.SupplierInfo" type="XML"/>
+
  		</semantic:content>
 
 		<semantic:sendEmailAction>
