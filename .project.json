@@ -12,7 +12,8 @@
     "excludedFiles": [
       "test.html"
     ],
-    "buildRequired": true
+    "buildRequired": false,
+    "lastBuildDateTime": "Sun, 05 Mar 2017 13:47:37 GMT"
   },
   "dataBinding": {
     "/webapp/view/App.view.xml": {
@@ -66,5 +67,10 @@
   },
   "hybrid": {
     "backendDestination": "ES4"
+  },
+  "hcpdeploy": {
+    "account": "i313404trial",
+    "name": "manageproducts",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
